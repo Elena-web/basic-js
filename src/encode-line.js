@@ -22,7 +22,6 @@ function encodeLine(str) {
 		count = 1;
 		}
 	}
-
     return res;
 }
 
