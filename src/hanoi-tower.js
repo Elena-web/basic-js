@@ -15,9 +15,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function calculateHanoi(disksNumber, turnsSpeed) {
-	const turns = Math.pow(2, disksNumber) - 1; // Формула для вычисления минимальных ходов
-    const seconds = Math.floor(turns / (turnsSpeed / 3600)); // Время в секундах, округленное вниз
-
+	const turns = Math.pow(2, disksNumber) - 1;
+    const seconds = Math.floor(turns / (turnsSpeed / 3600));
     return {
         turns: turns,
         seconds: seconds

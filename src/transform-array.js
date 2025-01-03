@@ -25,26 +25,26 @@ function transform(arr) {
         switch (arr[i]) {
             case '--double-next':
                 if (i < length - 1) {
-                    result.push(arr[i + 1]); // Дублируем следующий элемент
+                    result.push(arr[i + 1]);
                 }
                 break;
             case '--double-prev':
                 if (i > 0 && arr[i - 1] !== '--discard-next') {
-                    result.push(arr[i - 1]); // Дублируем предыдущий элемент
+                    result.push(arr[i - 1]);
                 }
                 break;
             case '--discard-next':
                 if (i < length - 1) {
-                    i++; // Пропускаем следующий элемент
+                    i++;
                 }
                 break;
             case '--discard-prev':
                 if (result.length > 0) {
-                    result.pop(); // Удаляем последний добавленный элемент
+                    result.pop(); 
                 }
                 break;
             default:
-                result.push(arr[i]); // Добавляем обычные элементы
+                result.push(arr[i]);
         }
     }
 
