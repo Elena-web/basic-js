@@ -19,7 +19,7 @@ function encodeLine(str) {
 		count++;
 		} else {
 		res += count > 1 ? count + str[i] : str[i];
-		count = 1; 
+		count = 1;
 		}
 	}
 
